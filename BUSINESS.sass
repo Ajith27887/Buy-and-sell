@@ -1,0 +1,630 @@
+@mixin font()
+        font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+@mixin align-center()
+   display: grid
+   align-items: center
+@mixin center()
+    display: grid
+    align-items: center
+    justify-content: center
+@mixin color()
+   color: #9370DB
+@mixin bg-color()
+   background-color: #9370DB
+@mixin bg-white()
+   background-color: #fff    
+::selection
+    color: #fff
+    @include bg-color()                      
+*
+    padding: 0
+    margin: 0
+.sidenav
+    display: none
+    position: fixed
+    top: 30px
+    bottom: 0
+    right: 0
+    left: 0
+    height: 100%
+    width: 0px
+    padding: 30px
+    background-color: #fff
+    z-index: 1 
+.sidenav a
+    color: #000
+    @include font()
+    text-decoration: none
+    margin-top: 20px
+.sidenav a:hover
+    width: 100%
+    @include bg-color()
+    color: #fff   
+.open
+    display: none 
+#menu
+    display: none
+@media screen and ( max-width: 992px )
+    #menu
+       display: block 
+       cursor: pointer             
+.nav
+    background: #fff
+    position: fixed
+    width: 100%
+    height: 70px
+    display: grid
+    grid-template-columns: 20% 80%
+    @include font()
+    z-index: 1
+.right a
+    text-decoration: none  
+    color: #000
+    margin-left: 25px
+.right a:hover 
+    @include color()
+.right
+    text-align: left
+    font-size: 12px
+    margin-left: 50px
+    margin-top: 25px  
+.left
+    @include align-center()
+    margin-left: 50px
+    @include font()
+    font-weight: 600
+    font-size: 25px
+.col
+    @include color()
+@media screen and ( max-width:1400px)
+    .left
+        text-align: center
+@media screen and ( max-width: 1200px )
+    .nav
+        height: 100px
+        display: grid
+        grid-template-columns: 100%  
+    .right
+        text-align: center
+        margin-top: 10px
+    .left
+        margin-top: 10px
+@media screen and ( max-width: 992px)
+    .right
+        display: none
+    .left
+        text-align: left 
+        margin-top: -45px  
+    .nav
+        height: 40px 
+    .menu
+        text-align: left
+        margin: 0 
+        padding: 0
+        display: inline-block
+        cursor: pointer 
+.slider img
+    overflow: auto
+    display: block          
+.black
+    max-width: 100%
+    height: 200px
+    background: #000
+    color: #fff 
+    @include align-center()
+    display: grid
+    grid-template-columns: 70% 30%
+.left1
+    @include font()
+    padding: 50px
+    line-height: 35px
+.button
+    cursor: pointer
+    border: none  
+    width: 150px
+    height: 50px
+    background-color: #fff
+    color: #000  
+    border-radius: 50px 
+    position: absolute
+    right: 50px 
+.button:hover
+    @include bg-color()
+    color: #fff
+@media screen and ( max-width: 768px )
+    .black
+        text-align: center
+        display: grid
+        grid-template-columns: 100%
+    .button
+        margin-top: -40px
+        position: absolute
+        right: 270px
+.about
+    height: auto
+    display: grid
+    grid-template-columns: 50% 50%
+    @include font()
+.one
+    background-color: #f5f5f5 
+    text-align: center
+    padding: 70px
+    word-spacing: normal
+    text-justify: inter-word
+.second
+    background: url(https://livedemo00.template-help.com/wt_62267_v8/prod-18906-buy&sell/images/bg-image-1.jpg)  no-repeat center
+    background-size: cover
+.para1
+    margin-top: 50px 
+    font-size: 15px
+    line-height: 25px      
+.inner
+    display: grid
+    grid-template-columns: 50% 50%
+    margin-top: 50px
+.inner1 p 
+    line-height: 30px
+.inner2 p 
+    line-height: 30px         
+.inner1
+    margin-right: 60px  
+.inner2
+    margin-right: 60px       
+.inner h1
+    font-size: 50px 
+@media screen and ( max-width: 1200px )
+    .inner
+      display: grid
+      grid-template-columns: 100%
+    .inner2
+      margin-top: 50px  
+@media screen and ( max-width: 992px  )
+    .about
+        display: grid
+        grid-template-columns: 100%
+    .second         
+        width: 100%
+        height: 270px
+@media screen and ( max-width: 1400px )
+    .about
+        font-size: 10px
+    .inner p,.inner p 
+        font-size: 15px       
+.heading1
+    max-width: 100%
+    height: 125px
+    text-align: center
+    color: #000
+    margin-top: 100px
+    @include font()
+    font-size: 30px
+.line
+    margin-left: auto
+    margin-right: auto
+    margin-top: 10px
+    @include bg-color()
+    width: 80px
+    height: 1px
+    @include color()
+@media screen and ( min-width: 992px )
+    .workimg
+        display: grid
+        grid-template-columns: 50% 50%
+@media screen and ( max-width: 992px )
+    .working
+        display: grid
+        grid-template-columns: 100% 
+        width: 60%
+        margin-left: auto
+        margin-right: auto
+.photo
+    margin: 0 auto
+.photo img     
+    width: 100%
+    height: auto        
+.paras
+    width: 80%
+    margin: 0 auto
+.head4
+    @include font()
+    font-size: 20px
+.para2
+    margin-top: 50px
+    line-height: 25px    
+.head5
+    margin-top: 50px
+    @include font()
+    font-size: 20px 
+@media screen and ( max-width: 1400px )
+    .photo
+       padding-left:  100px
+    .paras
+       padding-right: -100px 
+@media screen and ( max-width: 1050px )
+    .working
+        display: grid
+        grid-template-columns: 100%       
+.black1
+    max-width: 100%
+    margin-top: 50px
+    height: 400px
+    background-image: url(https://livedemo00.template-help.com/wt_62267_v8/prod-18906-buy&sell/images/bg-image-8.jpg)    
+    background-size: cover
+    background-repeat: no-repeat
+    @include center()
+.black1 h1
+    text-align: center
+    width: 80%
+    font-size: xx-large
+    color: #fff
+    @include font()
+.button1
+    margin-left: 300px
+    cursor: pointer
+    border: none  
+    width: 150px
+    height: 50px
+    background-color: #fff
+    color: #000  
+    border-radius: 50px
+.button1:hover
+    @include bg-color()
+    color: #fff
+@media screen and ( max-width: 780px  )
+    .black1 h1
+        margin-left: auto
+        margin-right: auto
+    .button1
+        margin-left: auto
+        margin-right: auto
+.price-tag
+    padding-top: 50px
+    padding-bottom: 50px
+    text-align: center
+    background-color: #f1f1f1
+    justify-content: space-around
+.wrapper
+    margin-top: 100px
+    display: block
+    margin-left: auto
+    margin-right: auto
+    width: 80%
+.wrapper1
+    display: grid
+    justify-content: space-around
+    grid-template-columns: 25% 25% 25% 25%
+.starter
+    @include font()
+    @include bg-white()
+    border-radius: 20px
+    margin-right: 50px
+    height: 500px
+    max-width: 90%
+    min-width: 80%
+    display: box
+    box-orient: horizontal
+    box-pack: center
+    box-align: center
+.head6
+    margin-top: 30px
+.starter:hover
+    box-shadow: 1px 4px 25px 3px rgba(117, 117, 117, 0.8)            
+.standard
+   @extend .starter   
+.business
+    @extend .starter
+.professional
+    @extend .starter
+.para3
+    font-size: 35px
+    @include color()
+.line1
+    margin-top: 80px
+.line1 p
+    margin-top: 20px
+.button2
+    border-radius: 50px
+    margin-top: 60px
+    cursor: pointer
+    border: none  
+    width: 150px
+    height: 50px
+    @include bg-color()
+    color: #ffffff 
+.button2:hover
+    background-color: #000
+    color: #fff
+@media screen and ( max-width: 1200px  )
+    .wrapper1
+        max-width: 100%
+        display: grid
+        justify-content: space-evenly
+        grid-template-columns: 50% 50%
+    .starter
+        height: 500px
+        min-width: 60%
+        max-width: 70%
+        width: 100%
+    .business
+        margin-top: 50px
+    .professional
+        margin-top: 50px
+@media screen and ( max-width: 768px )
+    .wrapper
+        width: 100%
+    .wrapper1
+        display: grid
+        grid-template-columns: 100%
+        margin-left: auto
+        margin-right: auto
+        width: 70%
+    .staeter
+        margin-top: 50px
+        width: 100%
+    .standard
+        margin-top: 50px    
+    .business
+        margin-top: 50px
+    .professional
+        margin-top: 50px    
+.portfolio
+    display: grid
+    grid-template-columns: 25% 25% 25% 25%
+.image1
+    position: relative
+    max-width: auto
+    width: 100%    
+.img1
+    display: block
+    width: 100%
+    height: auto     
+.overlay1
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    height: 100%
+    width: 100%
+    opacity: 0
+    transition: 0.5s
+    @include bg-color()
+.image1:hover .overlay1
+    opacity: 0.8    
+#material-icons
+    text-align: center
+    color: #fff
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    -ms-transform: translate(-50%, -50%)
+    text-align: center   
+.overlay2
+    @extend .overlay1
+.overlay2:hover
+    opacity: 0.8
+.image2
+    @extend .image1
+.img2
+    @extend .img1
+.image3
+    @extend .image1
+.img3
+    @extend .img1
+.overlay3
+    @extend .overlay1    
+.overlay3:hover
+    opacity: 0.8   
+.image4
+    @extend .image1
+.img4
+    @extend .img1
+.overlay4
+    @extend .overlay1    
+.overlay4:hover
+    opacity: 0.8   
+.image5
+    @extend .image1
+.img5
+    @extend .img1
+.overlay5
+    @extend .overlay1    
+.overlay5:hover
+    opacity: 0.8
+.image6
+    @extend .image1
+.img6
+    @extend .img1
+.overlay6
+    @extend .overlay1    
+.overlay6:hover
+    opacity: 0.8 
+.image7
+    @extend .image1
+.img7
+    @extend .img1
+.overlay7
+    @extend .overlay1    
+.overlay7:hover
+    opacity: 0.8
+.image8
+    @extend .image1
+.img8
+    @extend .img1
+.overlay8
+    @extend .overlay1    
+.overlay8:hover
+    opacity: 0.8                        
+@media screen and ( max-width: 1200px )
+    .portfolio
+        display: grid
+        grid-template-columns: 33.3% 33.3% 33.3%
+@media screen and ( max-width: 768px )
+    .portfolio
+        display: grid
+        justify-content: center
+        grid-template-columns: 100%
+        margin-left: auto
+        margin-right: auto
+        max-width: 500px
+.Title2
+    width: 100%
+    height: 200px
+    @include font()
+    display: grid
+    justify-content: center
+    align-items: center
+.Title3
+    width: 100%
+    height: 200px
+    @include font()
+    display: grid
+    justify-content: center
+    align-items: center
+.blog 
+    position: relative 
+.blogs
+    max-width: 90%
+    margin-left: auto
+    margin-right: auto
+    display: grid
+    grid-template-columns: 33.3% 33.3%  33.3%
+.blog1 img
+    margin-top: 20px
+    border-radius: 40px
+.blog2 img
+    margin-top: 20px
+    border-radius: 40px
+.blog3 img
+    margin-top: 20px
+    border-radius: 40px
+.head7
+    @include font()
+    margin-top: 25px
+    font-size: 20px
+.blog2
+    margin-left: 60px
+.blog3
+    margin-left: 60px      
+.B-box
+    width: 100%
+    height: 200px
+    box-sizing: border-box
+    @include bg-color()
+    color: #fff
+    margin-top: 20px
+    text-align: center
+    display: grid
+    align-content: center
+    @include font()
+    font-weight: 100
+    font-size: 17px  
+.head8:hover
+    color: #000
+.para4
+    margin-top: 20px
+.B2-box
+    width: 100%
+    height: 200px
+    box-sizing: border-box
+    background-color: #f7f7f7
+    margin-top: 20px
+    text-align: center
+    display: grid
+    align-content: center
+    @include font()
+    font-size: 14px 
+@media (min-width: 1400px)
+    .blogs
+        max-width: 1400px
+@media (max-width: 1200px)
+    .blogs
+        max-width: 1200px
+        display: grid
+        grid-template-columns: auto auto
+        width: 80%
+@media screen and ( max-width: 998px )
+    .blogs
+        max-width: 992px
+        width: 90%
+@media screen and ( max-width: 768px )
+    .blogs
+        display: grid
+        grid-template-columns: 100%                
+        text-align: center
+        margin-left: auto
+        margin-right: auto
+        max-width: 768px
+        width: 70%
+.quote
+    width: 100%
+    height: 700px
+    display: grid
+    grid-template-columns: 50% 50%
+    margin-top: 100px        
+.image9
+    background-image: url("https://livedemo00.template-help.com/wt_62267_v8/prod-18906-buy&sell/images/bg-image-3.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    width: 100%
+    height: 100%
+.field
+    background-color: #f0f0f0    
+.head10
+    @include font()
+    margin-top: 80px
+.field1
+    width: 60%
+    margin-left: auto
+    margin-right: auto
+.input1
+    margin-top: 30px
+    width: 100%
+    height: 40px
+    padding: 5px
+textarea
+    width: 100%
+    padding: 10px
+    margin-top: 30px            
+.button3
+    margin-top: 30px
+    width: 130px
+    border: none
+    height: 50px
+    color: #fff
+    cursor: pointer
+    @include bg-color()
+    border-radius: 50px
+    position: relative
+.button3:hover
+    background-color: #000
+input[type="text"],textarea
+    background-color: #f0f0f0
+    border: 1px solid  #a7a7a7
+@media screen and ( max-width: 992px )
+    .quote
+        display: grid
+        grid-template-columns: 100%
+    .image9
+        background-image: url("https://livedemo00.template-help.com/wt_62267_v8/prod-18906-buy&sell/images/bg-image-3.jpg")
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        width: 100%
+        height: 325px
+
+
+
+               
+                
+                      
+    
+         
+        
+          
+
+
+     
+
